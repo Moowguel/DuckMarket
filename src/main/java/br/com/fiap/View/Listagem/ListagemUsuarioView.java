@@ -15,7 +15,7 @@ public class ListagemUsuarioView {
             List<Usuario> usuarios = dao.listar();
             for (Usuario usuario : usuarios){
                 System.out.println("ID Usuario: " + usuario.getIdUsuario()  + " | Nome: " + usuario.getNome() + " | Email: " +  usuario.getEmail() + " | Senha: " +  usuario.getSenha() + " | Data de Criação da Conta: " + usuario.getDtCriacaoUsuario());
-                Main.main(null);
+
             }
         }catch (SQLException e){
             System.err.println(e.getMessage());

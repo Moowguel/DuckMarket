@@ -15,7 +15,7 @@ public class ListagemTransacaoView {
             List<Transacao> transacoes = dao.listar();
             for (Transacao transacao : transacoes){
                 System.out.println("ID Transacao: " + transacao.getIdTransacao()  + " | ID Conta: " + transacao.getIdConta() + " | ID Criptoativo: " + transacao.getIdCriptoativo() + " | Tipo de Transação: " +  transacao.getTipotransacao() + " | Quantidade da Transação: " + transacao.getQtdTransacao() + " | Preço Unitário: " + transacao.getPrecoUnitario() + " | Data da Transação: " + transacao.getDtTransacao());
-                Main.main(null);
+
             }
         }catch (SQLException e){
             System.err.println(e.getMessage());

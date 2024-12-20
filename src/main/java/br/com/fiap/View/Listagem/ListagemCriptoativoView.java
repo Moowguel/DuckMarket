@@ -14,7 +14,7 @@ public class ListagemCriptoativoView {
             List<Criptoativo> criptoativos = dao.listar();
             for (Criptoativo criptoativo : criptoativos){
                 System.out.println("ID: " + criptoativo.getIdCripto() + " | NOME CRIPTO: " + criptoativo.getNomeCripto() + " | SIMBOLO: " + criptoativo.getSimbolo() + " | DATA DE CRIAÇÃO: " +  criptoativo.getDtcriacaocriptoativo() + " | VARIAÇÃO: " + criptoativo.getVariacao() + " | QUANTIDADE" + criptoativo.getQtdCriptoativo() + " | Preço Unitário" + criptoativo.getPrecoUnitario());
-                Main.main(null);
+
             }
         }catch (SQLException e){
             System.err.println(e.getMessage());

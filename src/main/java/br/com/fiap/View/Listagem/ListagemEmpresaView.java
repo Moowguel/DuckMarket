@@ -15,7 +15,7 @@ public class ListagemEmpresaView {
             List<Empresa> empresas = dao.listar();
             for (Empresa empresa : empresas){
                 System.out.println("ID Conta: " + empresa.getIdConta() + " | ID Usuario: " + empresa.getIdUsuario() + " | Nome Conta: " + empresa.getNomeConta() + " | Saldo : " +  empresa.getSaldo() + " | Limite: " + empresa.getLimite() + " | Data de Criação da empresa" + empresa.getDataCriacaoEmpresa());
-                Main.main(null);
+
             }
         }catch (SQLException e){
             System.err.println(e.getMessage());
